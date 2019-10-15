@@ -1,0 +1,3 @@
+.idea
+/app/database/mysql/mysql_connection.json
+/app/database/redis/redis_connection.json
