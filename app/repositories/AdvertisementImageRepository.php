@@ -20,7 +20,7 @@ class AdvertisementImageRepository
         $file_extension = pathinfo($body['file']["name"], PATHINFO_EXTENSION);
         $name = $file_name . date('?Y-m-d?H:i:s') . '.' . $file_extension;
         $destination = UPLOADS_PATH . "images/$name";
-//        move_uploaded_file($body['file']['tmp_name'], $destination);
+        move_uploaded_file($body['file']['tmp_name'], $destination);
 
         $this->model->setIdAdvertisement($body['id_advertisement']);
         $this->model->setPath($destination);
